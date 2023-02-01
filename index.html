@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="main-container">
+      <header>
+        <div class="logo">
+          <h1>MyTrip</h1>
+        </div>
+        <div class="nav-bar">
+          <div class="close-btn" onclick="toggle()">
+            <i class="fa-solid fa-xmark"></i>
+          </div>
+          <nav>
+            <a href="#">Home</a>
+            <a href="#">Hotels</a>
+            <a href="#">Flights</a>
+            <a href="#" class="active-link">Login</a>
+            <a href="#" class="active-link">Sign Up</a>
+          </nav>
+        </div>
+        <div class="hamburger" onclick="toggle()">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </header>
+      <div class="content">
+        <div class="text-content">
+          <h1>Discover The Best Lovely <span>Places</span></h1>
+          <div class="input-box">
+            <div class="input">
+              <input type="text" placeholder="Search for places" />
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+            <a href="#">Explore more</a>
+          </div>
+        </div>
+        <div class="img">
+          <img src="Travelers-rafiki.png" alt="" />
+        </div>
+      </div>
+      <footer>
+        <a href="#">Terms and Conditions</a>
+        <div class="links">
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#"><i class="fa-brands fa-twitter"></i></a>
+          <a href="#"><i class="fa-solid fa-envelope"></i></a>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

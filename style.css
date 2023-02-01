@@ -1,0 +1,216 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  :root {
+    --primary-c: #407bff;
+    --primary-font: "Poppins", sans-serif;
+  }
+  .main-container {
+    width: 100%;
+    min-height: 100vh;
+    background-image:url("https://img.freepik.com/free-vector/watercolor-travel-background_52683-84752.jpg?w=2000");
+    display: grid;
+    background-size: cover;
+    grid-template-columns: 100%;
+    grid-template-rows: 80px 1fr 60px;
+  }
+  
+  header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background: #fff;
+    justify-content: space-between;
+    padding: 1rem 3rem;
+    box-shadow: 3px 2px 5px #888888;
+    z-index: 2;
+  }
+  .logo {
+    font-family: "Bebas Neue", cursive;
+    font-size: 1.3rem;
+  }
+  
+  .logo h1 {
+    letter-spacing: 2px;
+  }
+  
+  .hamburger {
+    display: none;
+  }
+  .close-btn {
+    display: none;
+  }
+  header nav a {
+    text-decoration: none;
+    color: #000;
+    font-size: 1.2rem;
+    margin-left: 1.5rem;
+    font-family: var(--primary-font);
+    font-weight: 400;
+  }
+  .active-link {
+    color: var(--primary-c);
+  }
+  .content {
+    padding: 0 2.5rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1;
+  }
+  
+  .text-content {
+    width: 85%;
+  }
+  .text-content h1 {
+    font-family: var(--primary-font);
+    font-weight: bold;
+    font-size: 3.3rem;
+  }
+  .text-content h1 span {
+    color: var(--primary-c);
+  }
+  img {
+    width: 65%;
+    height: auto;
+    float: right;
+  }
+  .input {
+    width: 350px;
+    height: 50px;
+    border: 2px solid #cfcfcf;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 7px;
+    margin: 0.5rem 0;
+  }
+  .input input {
+    width: 300px;
+    height: 35px;
+    padding: 0 0.3rem;
+    font-family: var(--primary-font);
+    border: none;
+    outline: none;
+    color: #cfcfcf;
+  }
+  .fa-magnifying-glass {
+    color: #cfcfcf;
+    cursor: pointer;
+  }
+  .text-content a {
+    display: block;
+    width: 170px;
+    height: 55px;
+    text-align: center;
+    line-height: 55px;
+    border-radius: 3px;
+    text-decoration: none;
+    color: #fff;
+    background-color: var(--primary-c);
+    font-family: var(--primary-font);
+    margin-top: 1rem;
+  }
+  footer {
+    position: sticky;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    padding: 0 2.5rem;
+    justify-content: space-between;
+    align-items: center;
+    font-family: var(--primary-font);
+    box-shadow: 3px 2px 15px #888888;
+  }
+  footer a {
+    text-decoration: none;
+    color: var(--primary-c);
+  }
+  .links a {
+    font-size: 1.5rem;
+    margin-right: 1rem;
+  }
+  @media screen and (max-width: 1024px) {
+    .text-content h1 {
+      font-size: 2.5rem;
+    }
+  }
+  @media screen and (max-width: 910px) {
+    .content {
+      flex-direction: column-reverse;
+      justify-content: space-evenly;
+    }
+    .img {
+      text-align: center;
+    }
+    .img img {
+      float: none;
+    }
+    .text-content {
+      text-align: center;
+    }
+    .input-box {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-evenly;
+    }
+    .input-box a {
+      margin-top: 0.5rem;
+    }
+    .text-content h1 {
+      font-size: 2.2rem;
+    }
+  }
+  @media screen and (max-width: 480px) {
+    .hamburger {
+      display: block;
+      font-size: 1.5rem;
+    }
+    .close-btn {
+      display: block;
+      position: absolute;
+      top: 3%;
+      right: 5%;
+      font-size: 1.5rem;
+    }
+    .nav-bar {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100vh;
+      background-color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      visibility: hidden;
+      z-index: 1000;
+    }
+    .show-menu {
+      visibility: visible;
+    }
+    .nav-bar nav {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      text-align: center;
+    }
+    .nav-bar nav a {
+      font-size: 1.5rem;
+      margin: 1rem 0;
+    }
+    footer {
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-evenly;
+    }
+  }
